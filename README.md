@@ -1,3 +1,4 @@
+
 # Capstone
 
 # Classifying Marine Vessels using Convolutional Neural Networks
@@ -59,7 +60,7 @@ except cargo ships and carrier ships which may be more challenging for the model
 In plotting the counts for each of the five classes of ships, we can see a slight class imbalance between the five categories with more of class 1: Cargo, then the rest. To rectify this, 
 a class weight is created to use when modeling.
 
-![example]
+![class_imbalance](https://user-images.githubusercontent.com/75099138/127192651-9c8b5770-c0e0-4fc7-a31d-4c630a7e9960.png)
 
 ## Models
 Various models are generated in order to find a model with the best accuracy score. The MLP (MultiLayerPerceptron) models are created first, followed by the CNN (Convultion Neural Net) models. There was a high amount of
