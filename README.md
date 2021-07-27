@@ -1,10 +1,11 @@
 
-# Capstone
+## Capstone Project
 
 # Classifying Marine Vessels using Convolutional Neural Networks
 **Author: Lera Tsayukova**
 
-![example](
+![example]![599881232](https://user-images.githubusercontent.com/75099138/127193063-4bdc8067-78b2-4a0a-b489-1412f57caafc.jpeg)
+
 
 ## Overview
 The Problem: 
