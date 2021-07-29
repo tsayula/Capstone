@@ -81,18 +81,46 @@ The best model that was did not using transfer learning was the sixth model  whi
 ## Final Model
 The final model that was not pretrained included an l1 of 0.0001, activation of 'relu' and 'softmax', and 0.5 dropout , and early stopping. With this model the accuracy on the train set is 0.818, recall on the validation set is 0.8034, and recall on the test set is 1. 
 
-![example](images/final_model_graph.png)
+**Best Model without Transfer Learning**
 
-![example](images/validation_cm.png)
+<img width="433" alt="Screen Shot 2021-07-29 at 5 18 56 PM" src="https://user-images.githubusercontent.com/75099138/127567233-535cc0a2-0f29-48bb-823b-3e80b84dbb77.png">
 
-![example](images/test_cm.png)
+The model training accurary is:  93.41
 
-The confusion matrix shows that the model does have more false positives. However, because the focus was to create a model which minimizes false negatives, this model is still deemed the best model for determining if a 
-the class of ship.
+The model validation accurary is:  75.93
+
+**Best Model using Transfer Learning***
+
+<img width="448" alt="Screen Shot 2021-07-29 at 5 16 18 PM" src="https://user-images.githubusercontent.com/75099138/127570120-6fd55e81-844c-4eca-b1a8-74c066bb098a.png">
+
+The VGG16 pretrained model training accurary is:  88.91
+
+The VGG16 pretrained model validation accurary is:  80.1
+
+<img width="427" alt="Screen Shot 2021-07-29 at 5 46 36 PM" src="https://user-images.githubusercontent.com/75099138/127570171-21fd3b72-e57f-49f2-8aaf-a5c7d6ce2a41.png">
+
+## Summary
+
+ **What worked**
+
+
+> In trying to improve the accuracy scores, the following seemed to make a difference, most of which is intuitive:
+
+*   Add more layers
+*   Adding stronger regularization (though not a huge improvement)
+*   Using a pretrained model with established weights (VGG16)
+*   Using a pretrained model on transformed images
+
+ **What didnt work**
+
+*   Training models for longer
+*   But also not training models for long enough on transformed images.
+*   Regularizing (when the dropout layers were not strong enough)
+
 
 ## Next Steps: 
 Some future steps to improve the model include:
-  - Running more models to try and improve Accuracy score
+  - Experiment with other transfer models (ResNet, EfficientNet, Xception)
   - Trying other techniques to minimize overfitting, such as batch normalization
   - Implementing transfer learning models
 
@@ -101,7 +129,6 @@ Some future steps to improve the model include:
 ├── best_models
 ├── data
 ├── images
-├── notebooks
 ├── Final_Notebook.ipynb
 ├── Presentation.pdf
 └── README.md
