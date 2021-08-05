@@ -1,4 +1,5 @@
 
+
 ## Capstone Project
 
 # Classifying Marine Vessels using Convolutional Neural Networks
@@ -91,13 +92,33 @@ The model validation accurary is:  75.93
 
 **Best Model using Transfer Learning***
 
-<img width="448" alt="Screen Shot 2021-07-29 at 5 16 18 PM" src="https://user-images.githubusercontent.com/75099138/127570120-6fd55e81-844c-4eca-b1a8-74c066bb098a.png">
+<img width="450" alt="Screen Shot 2021-08-04 at 2 40 12 PM" src="https://user-images.githubusercontent.com/75099138/128426048-18babb98-3385-4fbe-a3b9-c90ec6ea6d07.png">
 
-The VGG16 pretrained model training accurary is:  88.91
+The MobileNetV2 pretrained model training accurary is:  99.1
 
-The VGG16 pretrained model validation accurary is:  80.1
+The MobileNetV2pretrained model validation accurary is:  89.2
 
-<img width="427" alt="Screen Shot 2021-07-29 at 5 46 36 PM" src="https://user-images.githubusercontent.com/75099138/127570171-21fd3b72-e57f-49f2-8aaf-a5c7d6ce2a41.png">
+<img width="455" alt="Screen Shot 2021-08-04 at 2 41 06 PM" src="https://user-images.githubusercontent.com/75099138/128426201-4e22de97-7d3e-4e86-a1e8-9b8395ce09f0.png">
+
+## Model Predictions: How it Predicts using LIME 
+
+Now lets take a look at some of the model predictions. With Neural Networks its hard to extract feature importance. So, just what does the model see? How does it predict? 
+
+**Example 1: Cargo Ship
+
+
+<img width="320" alt="Screen Shot 2021-08-05 at 2 33 24 PM" src="https://user-images.githubusercontent.com/75099138/128426502-c06878e8-f923-480c-9bd8-6eb6600f4326.png"><img width="308" alt="Screen Shot 2021-08-05 at 2 36 40 PM" src="https://user-images.githubusercontent.com/75099138/128426515-6e033650-0c74-4063-b386-4c5a43977fa5.png"><img width="322" alt="Screen Shot 2021-08-05 at 2 38 50 PM" src="https://user-images.githubusercontent.com/75099138/128426525-a3e52b20-e3eb-447e-9d30-4ae6ab78ecdd.png"><img width="407" alt="Screen Shot 2021-08-05 at 2 39 56 PM" src="https://user-images.githubusercontent.com/75099138/128426533-d124972b-5420-4df9-94b1-7378d5948651.png">
+
+
+**Example 2: Cruise Ship
+
+
+<img width="307" alt="Screen Shot 2021-08-05 at 2 58 30 PM" src="https://user-images.githubusercontent.com/75099138/128426626-14c2a011-7880-4fdd-9035-e9613b3628bf.png"><img width="305" alt="Screen Shot 2021-08-05 at 2 58 39 PM" src="https://user-images.githubusercontent.com/75099138/128426630-e757fc8c-7cf8-444d-8f53-c08b2958ea2b.png"><img width="320" alt="Screen Shot 2021-08-05 at 2 58 45 PM" src="https://user-images.githubusercontent.com/75099138/128426649-73f2206c-b1cb-45ec-86ef-73676e63bc06.png">
+<img width="375" alt="Screen Shot 2021-08-05 at 2 58 52 PM" src="https://user-images.githubusercontent.com/75099138/128426658-f89fd81f-b776-4b82-8297-bf9d4d038796.png">
+
+
+
+
 
 ## Summary
 
@@ -120,9 +141,9 @@ The VGG16 pretrained model validation accurary is:  80.1
 
 ## Next Steps: 
 Some future steps to improve the model include:
-  - Experiment with other transfer models (ResNet, EfficientNet, Xception)
+  - Experiment with other transfer models (ResNet, Xception)
   - Trying other techniques to minimize overfitting, such as batch normalization
-  - Implementing transfer learning models
+  - App Deployment!
 
 ## Repository Structure
 ```
