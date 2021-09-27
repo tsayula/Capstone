@@ -22,8 +22,8 @@ The methodology for this project includes data cleaning, exploratory data analys
 with the highest accuracy score.
 
 Two types of models will be created including 
-Multi Layer Perceptron (MLP) models as well as Convolutional Neural Network (CNN) models. These models will be evalued using accuracy scores to stress the 
-importance of minimizing false positives
+Multi Layer Perceptron (MLP) models as well as Convolutional Neural Network (CNN) models. These models will be evaluated using accuracy scores to stress the 
+importance of minimizing false positives.
 
 ## Data
 The data consisted of a total of 6,252 images from Kaggle. The target variable is broken down into 5 categories.
@@ -33,8 +33,8 @@ The data consisted of a total of 6,252 images from Kaggle. The target variable i
 The images were processed using Keras' image processing tools, including Keras Image Data Generator.
 
 ## Exploratory Data Analysis
-To become familiar with the data, images from each category in the training set are visualized to see what they look like respectively. some images in the normal train set as well as the pneumonia train set are visualized to see what the images look like. 
-Furthermore, a graph is generateed to explore class imbalance within the data.
+To become familiar with the data, images from each category in the training set are visualized to see what they look like respectively. 
+Furthermore, a graph is generateed to explore class imbalance within the data. #See Class Imbalance below
 
 ### Visualization
 The images are visualized to compare the different types of classes included in the dataset. The difference are fairly distinct among classes, 
